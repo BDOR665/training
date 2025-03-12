@@ -13,10 +13,10 @@ public class AverageOfArray {
             System.out.println("배열["+i+"]의 값을 넣어주세요 : ");
             arrayAve[i] = sc.nextInt();
         }
-        for (int i=0; i<arrayAve.length; i++){
-            sum = sum + arrayAve[i];
+        for (int num : arrayAve) {
+            sum += num;
         }
-        double ave = sum/arrayAve.length;
+        double ave = (double) sum/arrayAve.length;
 
         System.out.println("배열의 평균은 : "+ave+"입니당!");
 
